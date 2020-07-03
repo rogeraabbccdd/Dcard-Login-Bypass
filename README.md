@@ -1,1 +1,4 @@
-# Dcard-Login-Bypass
+# Dcard Login Bypass
+Bypass this shit  
+  
+![](./screenshot.png)
