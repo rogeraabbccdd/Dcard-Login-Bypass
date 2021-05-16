@@ -21,7 +21,6 @@ let timer = setInterval(() => {
             document.body.style.top = ''
             window.scrollTo(0, top)
             console.log('Dcard login bypassed')
-            clearInterval(timer)
         }
     }
 }, 100)
