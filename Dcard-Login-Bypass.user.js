@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Dcard login bypass
-// @version      0.3
+// @version      0.4
 // @description  Browse Dcard without logging in
 // @author       rogeraabbccdd
 // @match        https://www.dcard.tw/*
