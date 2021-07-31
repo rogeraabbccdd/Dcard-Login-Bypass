@@ -18,7 +18,7 @@ let timer = setInterval(() => {
             portal.lastElementChild.remove()
             console.log('Dcard login bypassed')
         }
-        else if(portal.innerText.includes('註冊 / 登入')) {
+        else if(portal.innerText.includes('登入')) {
             portal.innerHTML = ''
             const top = parseInt(document.body.style.top)*-1
             document.body.style.position = ''
