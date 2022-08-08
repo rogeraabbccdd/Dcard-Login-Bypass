@@ -11,17 +11,13 @@
 // ==/UserScript==
 
 let timer = setInterval(() => {
-    const pos = document.body.style.position
-    if(pos === 'fixed') {
+    const overflow = document.body.style.overflow
+    if(overflow === 'hidden') {
         const portal = document.getElementsByClassName('__portal')[0]
-        if (portal.childElementCount === 3) {
-            portal.lastElementChild.remove()
-            console.log('Dcard login bypassed')
-        }
-        else if(portal.innerText.includes('登入')) {
+        if(portal.innerText.includes('登入')) {
             portal.innerHTML = ''
             const top = parseInt(document.body.style.top)*-1
-            document.body.style.position = ''
+            document.body.style.overflow = 'auto'
             document.body.style.top = ''
             window.scrollTo(0, top)
             console.log('Dcard login bypassed')
